@@ -9,7 +9,9 @@ namespace FilmesApi.Controllers
 public class FilmesController : ControllerBase
 {
     private static List<Filme> filmes = new List<Filme>();
-    public void AdicionaFilme(Filme filme)
+
+    [HttpPost]
+    public void AdicionaFilme([FromBody] Filme filme)
     {
         
     }
